@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Learnershakil!</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9fafb;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .cake-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            background-color: #3490dc;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2779bd;
+        }
+
+        .wishes {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 16px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Happy Birthday Learnershakil!</h1>
+        <div class="card">
+            <p class="message">Wishing you a fantastic birthday filled with joy and happiness!</p>
+            <img src="https://bkmedia.bakingo.com/squ-heart-shaped-black-forest-vanilla-cake0039hbfv-A.jpg?tr=w-500,h-500" alt="Birthday Cake" class="cake-image">
+            <a href="#" class="button">Send Wishes</a>
+        </div>
+        <div class="wishes">
+            <p>May all your dreams and wishes come true on your special day!</p>
+            <p>Wishing you a year filled with love, success, and happiness.</p>
+        </div>
+    </div>
+ <script>
+        document.querySelector('.button').addEventListener('click', function(e) {
+            e.preventDefault();
+            fetch('counter.php', {
+                method: 'POST'
+            })
+            .then(response => response.text())
+            .then(counter => {
+                alert('Happy Birthday Learnershakil!\nWishing you a fantastic day!\nNumber of people who wished: '+ counter);
+            });
+        });
+    </script>
+</body>
+
+</html>
