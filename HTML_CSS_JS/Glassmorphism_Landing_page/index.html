@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <span class="glass">Glassmorphism Glassmorphism Landing page</span>
+    <div class="container">
+        <div class="navbar">
+            <a href="#" class="logo">nightCoder</a>
+
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <a href="" class="button">Sign-In</a>
+        </div>
+        <div class="content">
+            <div class="title">
+                <p class="light">Introduction</p>
+                <p>Enhance your <br>productivity</p>
+
+            </div>
+            <div class="text">
+                <p>Focusing on lot of things can be streesful , <br>be productive to get work one with less <br>time</p>
+            </div>
+            <div class="button-box">
+                <a href="#">Get started <i class="icon fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <img src="undraw_coding_6mjf.svg" alt="background" class="right">
+    </div>
+
+
+    <script src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".container"), {
+            max: 5,
+            speed: 500,
+            glare:true,
+            "max-glare":0.5
+        });
+    </script>
+
+</body>
+
+</html>

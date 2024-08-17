@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto+Slab&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: radial-gradient(circle , #b43ab3 40%, #427bd5 52%, #37dbff 68%);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+span.glass{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+.container{
+    position: relative;
+    width: 992px;
+    height: 80vh;
+    padding: 30px 45px;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(31, 38,135, 0.37);
+    backdrop-filter: blur(5.0px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Crimson Text', serif;
+}
+.navbar .logo{
+  color: #2f2e41;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+.navbar .list{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.navbar .list li {
+    position: relative;
+    list-style-type: none;
+}
+.navbar .list li a{
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    color: #2f2e41;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: border 300ms linear;
+}
+.navbar .list li a:hover{
+    border-color: #2f2e41;
+}
+.navbar .button{
+    display: inline-block;
+    border: 1px solid #2f2e41;
+    color: #2f2e41;
+    border-radius: 50px;
+    padding: 8px 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 300ms, background 300ms, border 300ms linear;
+}
+.navbar .button:hover{
+    color: #ffffff;
+    border: 1px solid #0766ff;
+    background:#0766ff;
+}
+.right{
+    position: absolute;
+    right: 7px;
+    width: 332px;
+    bottom: 100px;
+}
+.content{
+    position: relative;
+    padding: 40px 0;
+    font-family: 'Crimson Text', serif;
+}
+.content .title{
+    position: relative;
+    margin-top: 40px;
+}
+.content .title p{
+    color: #2f2e41;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab', serif;
+}
+.content .title p.light{
+    font-weight:normal;
+    font-size: .7em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.content .text{
+    padding: 30px 30% 30px 0;
+}
+.content .text p{
+    color: #2f2e41;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.content .button-box{
+    position: relative;
+}
+.content .button-box a {
+   background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
+   padding: 15px 30px;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 50px;
+   display: inline-block;
+ }
+.content .button-box a:hover{
+   background-position: right center; 
+   color: #fff;
+}
+.content .button-box a .icon{
+    padding: 5px;
+}   
