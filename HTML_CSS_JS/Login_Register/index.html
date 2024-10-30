@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Divya </title>
+    <!-- TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Glassmorphism effect */
+        .glass {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center min-h-screen flex items-center justify-center text-white"
+      style="background-image: url('anime_boy_lofi_cat_desktop.jpg');">
+
+    <!-- Main Container -->
+    <div class="w-full max-w-md mx-auto glass p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-4 text-center">Welcome Back</h2>
+        <p class="text-center text-sm mb-6 italic text-gray-200">"Embrace the calm, even when surrounded by waves."</p>
+        
+        <!-- Tabs -->
+        <div class="flex mb-6 justify-around">
+            <button id="login-tab" onclick="showLogin()" class="w-1/2 py-2 font-bold border-b-2 border-white text-center">Login</button>
+            <button id="register-tab" onclick="showRegister()" class="w-1/2 py-2 font-bold text-center text-gray-400">Register</button>
+        </div>
+        
+       <!-- Login Form -->
+       <div id="login-form" class="space-y-4">
+        <input id="login-email" type="email" placeholder="Email" class="w-full px-4 py-2 bg-transparent border-b border-gray-300 focus:outline-none focus:border-blue-400" required/>
+        <input id="login-password" type="password" placeholder="Password" class="w-full px-4 py-2 bg-transparent border-b border-gray-300 focus:outline-none focus:border-blue-400" required/>
+        <button class="w-full py-2 bg-blue-500 rounded-lg hover:bg-blue-600 font-semibold" onclick="validateLogin()">Login</button>
+        <p class="text-sm text-center mt-4">Forgot your password? <a href="forget.html" class="text-blue-400 hover:underline">Reset it here</a></p>
+    </div>
+    
+    <!-- Register Form -->
+    <div id="register-form" class="space-y-4 hidden">
+        <input id="register-name" type="text" placeholder="Name" class="w-full px-4 py-2 bg-transparent border-b border-gray-300 focus:outline-none focus:border-green-400" required/>
+        <input id="register-email" type="email" placeholder="Email" class="w-full px-4 py-2 bg-transparent border-b border-gray-300 focus:outline-none focus:border-green-400" required/>
+        <input id="register-password" type="password" placeholder="Password" class="w-full px-4 py-2 bg-transparent border-b border-gray-300 focus:outline-none focus:border-green-400" required/>
+        <button class="w-full py-2 bg-green-500 rounded-lg hover:bg-green-600 font-semibold" onclick="validateRegister()">Register</button>
+    </div>
+</div>
+
+<!-- JavaScript for Tab Switching and Validation -->
+<script>
+    function validateLogin() {
+        const email = document.getElementById('login-email').value;
+        const password = document.getElementById('login-password').value;
+        if (email && password) {
+            login();
+        } else {
+            alert('Please fill in all fields');
+        }
+    }
+
+    function validateRegister() {
+        const name = document.getElementById('register-name').value;
+        const email = document.getElementById('register-email').value;
+        const password = document.getElementById('register-password').value;
+        if (name && email && password) {
+            register();
+        } else {
+            alert('Please fill in all fields');
+        }
+    }
+
+    const login = () => {
+        alert('Invalid Credentials');
+    }
+
+    const register = () => {
+        alert('Response received\nWait for account approval!!');
+    }
+
+    function showLogin() {
+        document.getElementById('login-form').classList.remove('hidden');
+        document.getElementById('register-form').classList.add('hidden');
+        document.getElementById('login-tab').classList.remove('text-gray-400');
+        document.getElementById('register-tab').classList.add('text-gray-400');
+    }
+
+    function showRegister() {
+        document.getElementById('register-form').classList.remove('hidden');
+        document.getElementById('login-form').classList.add('hidden');
+        document.getElementById('register-tab').classList.remove('text-gray-400');
+        document.getElementById('login-tab').classList.add('text-gray-400');
+    }
+</script>
+</body>
+</html>
