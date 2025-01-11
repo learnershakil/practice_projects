@@ -43,8 +43,6 @@ To use or modify this project, follow these steps:
 - Implement additional validation rules for complex input types.
 - Include animations for error messages to improve user experience.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 Contributions are welcome! Feel free to fork this repository and submit pull requests for improvements.
