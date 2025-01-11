@@ -18,7 +18,7 @@ To use or modify this project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mayur777-ui/practice_projects.git
+   git clone https://github.com/learners-arc/practice_projects
    ```
 2. Navigate to the project directory:
    ```bash
@@ -49,6 +49,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contributing
 Contributions are welcome! Feel free to fork this repository and submit pull requests for improvements.
 
-## Contact
-If you have any questions or suggestions, feel free to reach out:
-- GitHub: [mayur777-ui](https://github.com/mayur777-ui)
+
