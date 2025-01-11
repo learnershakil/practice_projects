@@ -9,10 +9,6 @@ A task management website that allows users to organize tasks using a simple dra
 - **Add new tasks**: Easily add tasks through a form.
 - **Background and styling**: Elegant wood-texture background with smooth transitions and modern design.
 
-## Installation
+## Repository URL
 
-To set up the project locally, follow these steps:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Muskanagrawal2005/task-management-board.git
