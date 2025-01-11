@@ -1,0 +1,64 @@
+#topCard {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#topCard h1 {
+    font-size: 3em;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#get-started-button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+#get-started-button:hover{
+    filter: brightness(90%);
+}
+#get-started-button:active{
+    filter: brightness(80%);
+}
+#topCard p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#features {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 15px;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    z-index: 0;
+}
+
+.feature {
+    padding: 20px;
+    width: 25%;
+    min-width: 225px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+}
+.feature:hover{
+    filter: brightness(80%);
+    /* opacity: 0.8; */
+    z-index: auto;
+}
+.feature img{
+    width: 70%;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}

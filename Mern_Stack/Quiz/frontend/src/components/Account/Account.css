@@ -1,0 +1,32 @@
+#accView{
+    height: 86vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+#stats{
+    width: 30%;
+    background-color: inherit;
+    height: 100%;
+    margin-left: 10px;
+}
+#friends{
+    /* width: auto; */
+    height: 100%;
+    flex-grow: 1;
+    background-color: inherit;
+    border-left: 2px solid gray;
+}
+#accProfile{
+    height: 30%;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#accProfile img{
+    height: 100%;
+    border-radius: 50%;
+}

@@ -1,0 +1,139 @@
+#createContainer{
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+#createContainer input{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: solid 2px black;
+    margin-left: 20px;
+    height: 20px;
+}
+#createContainer input:focus{
+    outline: none;
+
+}
+#createCont{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+.qdiv{
+    width: 100%;
+
+}
+#qsTitle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#qsTitle, .addQs{
+    height: 20vh;
+    width: 98%;
+    padding: 1%;
+    /* border-top: 1px solid gray; */
+    /* border-bottom: 1px solid gray; */
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 5px #808080;
+}
+
+#qsTitle div{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.addQs, .qs{
+    width: 98%;
+    padding: 1%;
+    margin-bottom: 15px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.addQs img{
+    height: 30px;    
+}
+.qs{
+    box-shadow: 2px 2px 5px #808080;
+    display: flex;
+    flex-direction: column;
+    cursor: auto;
+    /* border-top: 1px solid gray; */
+    /* border-bottom: 1px solid gray; */
+}
+.qsSubCont{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.qsSubCont input{
+    width: auto;
+    width: 60%;
+    padding: 8px;
+}
+.qsType{
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 8px;
+}
+.addQs:active{
+    filter: brightness(60%);
+}
+.qsOp{
+    margin-bottom: 20px;
+}
+.qsOp li{
+    min-height: 40px;
+}
+.qsOp li input{
+    width: 60%;
+}
+.addOp{
+    display: flex;
+    background-color: inherit;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.addOp img{
+    margin-left: 20px;
+    height: 20px;
+}
+.hoverable{
+    cursor: pointer;
+}
+.hoverable:hover{
+    filter: brightness(80%);
+}
+#buttons{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+#buttons div{
+    height: 50px;
+    width: 125px;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+.qsOp li img{
+    height: 20px;
+    cursor: pointer;
+}

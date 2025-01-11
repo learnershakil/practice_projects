@@ -1,0 +1,25 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "quiz platform",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "all": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudraksha007/Quiz.git"
+  },
+  "author": "Rudransh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudraksha007/Quiz/issues"
+  },
+  "homepage": "https://github.com/rudraksha007/Quiz#readme",
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7"
+  }
+}
