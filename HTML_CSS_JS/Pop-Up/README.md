@@ -36,8 +36,7 @@ To use or modify this project, follow these steps:
 - Include options for auto-closing pop-ups after a specified time.
 - Allow users to customize animations and themes.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
 ## Contributing
 Contributions are welcome! Feel free to fork this repository and submit pull requests for improvements.
