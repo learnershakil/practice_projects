@@ -1,0 +1,52 @@
+.btn{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    width: 250px;
+}
+
+.button1{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+.pop{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 500px;
+    /* background-color: #f9f9f9; */
+    /* border: 1px solid #ddffa2; */
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 2px 3px 4px 2px #000000;
+}
+
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #000000;
+    background-color: rgb(156, 193, 193);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px #000000;
+    border-radius: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
