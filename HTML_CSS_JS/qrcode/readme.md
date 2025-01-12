@@ -10,7 +10,7 @@ A simple **QR Code Generator** built with **HTML**, **CSS**, and **JavaScript**,
 - **CSS**: Styling and layout.
 - **JavaScript**: Logic for generating QR codes.
 
-##Repository url
-https://github.com/Muskanagrawal2005/practice_projects/qrcodeGen.git
+## Repository url
+https://github.com/Muskanagrawal2005/practice_projects/qrcode.git
 
 This tool simplifies sharing URLs by generating scannable QR codes quickly and efficiently!
