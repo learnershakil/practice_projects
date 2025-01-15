@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Task Management Board</h1>
+  <div class="board">
+    <div class="column" id="todo">
+      <h2>To-Do</h2>
+      <div class="task" draggable="true">Complete Project</div>
+    </div>
+    <div class="column" id="in-progress">
+      <h2>In Progress</h2>
+    </div>
+    <div class="column" id="done">
+      <h2>Done</h2>
+    </div>
+  </div>
+
+  <div class="icon-circle" id="toggleButton">
+    <img src="https://www.svgrepo.com/show/505250/plus.svg" alt="Icon">
+  </div>
+  <div id="slider" class="slider">
+    <h2>ADD TASK</h2>
+    <form id="taskForm">
+      <label for="taskInput">Task Name:</label>
+      <input type="text" id="taskInput" placeholder="Enter task name" required>
+      <button type="submit">Add Task</button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
