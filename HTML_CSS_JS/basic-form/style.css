@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #e6eef2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.header p {
+    margin: 5px 0 0;
+    color: #666;
+    margin-left: 3%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#info-heading{
+    margin-top: 5%;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.form-group label {
+    flex-basis: 100%;
+    font-weight: bold;
+}
+
+.input-heelo{
+    max-width: 900px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group textarea {
+    resize: none;
+}
+.form-group input[type="date"] {
+    max-width: 360px;
+}
+.form-group input[type="email"] {
+    max-width: 370px;
+}
+
+.courses {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fefefe;
+}
+.courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses-header button {
+    background: #666;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.courses-header button:hover {
+    background: #0056b3;
+}
+
+#comment{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fefefe;
+}
+
+.submit-btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+.submit-btn:hover {
+    background: #0056b3;
+}
